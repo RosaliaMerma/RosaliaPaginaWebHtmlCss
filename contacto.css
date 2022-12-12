@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --rosed:#ff0080;
+    --mored:#8635d8;
+}
+
+/*HERADER*/
+header{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabeza{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.cabe{
+    height: 75%;
+    margin-bottom: 7px;
+}
+.cabeza .cabe:nth-child(1){
+    height: 85%;
+    margin: 3px;
+    width: 350px;
+    background-image: url(./IMAGENES/logo.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 85%;
+    height: 60px;
+    background-color: var(--mored);
+    margin: 10px 0;
+    display: flex;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:'Roboto', sans-serif;
+}
+header nav a:hover{
+    background-color: var(--rosed);
+}
+.img{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 15px;
+}
+.texto{
+    width: 60%;
+    height: 70%;
+    text-align: justify;
+}
+.texto h1{
+    font-size: 15px;
+    color: white;
+}
+.contacto1{
+    width: 85%;
+    height: 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacto1 h1{
+    font-size: 20px;
+}
+.ini{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.ini a{
+    color: black;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 0 2px;
+}
+.ini h1{
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+/*CONTACTO*/
+
+#formulario{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.form{
+    width: 85%;
+    height: 115vh;
+    display: flex;
+}
+.datos{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.relleno{
+    width: 65%;
+    height: 100%;
+}
+.dat{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.iconos1{
+    width: 10%;
+    height: 50%;
+    text-align: center;
+}
+.datos1{
+    width: 85%;
+    height: 50%;
+}
+.dat h1{
+    font-size: 15px;
+    color: var(--mored);
+}
+.dat h3{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.datos .dat:nth-child(4) .datos1{
+    height: 80%;
+}
+.datos .dat:nth-child(4) .iconos1{
+    height: 80%;
+}
+.dat img{
+    margin-top: 3px;
+    width: 25px;
+}
+.datos #col{
+    color: var(--mored);
+}
+.formulario1{
+    width: 100%;
+    height: 83%;
+}
+.relleno h1{
+    color: var(--mored);
+    margin: 20px 10px;
+}
+.relleno h3{
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+/*FORMULARIO*/
+form{
+    margin: 10px 10px;
+    color: var(--mored);
+    font-weight: bolder;
+}
+label{
+    margin: 30px 0;
+}
+input{
+    background-color: rgba(245, 245, 245, 0.418);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(138, 138, 138, 0.355);
+}
+textarea{
+    background-color: rgba(245, 245, 245, 0.418);
+    border: 1px solid rgba(138, 138, 138, 0.355);
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+}
+form button{
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: var(--mored);
+}
+form button:hover{
+    background-color:var(--rosed);
+}
+/*FOOTER*/
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(34,41,49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h1{
+    color: white;
+    font-size: 20px;
+}
+.navega{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navega nav{
+    margin: 0;
+}
+.navega nav a:hover{
+    color: var(--rosed);
+}
+.navega h1{
+    padding: 30px 0 0 15px;
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(111, 116, 122);
+}
+.redes{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.reds{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.redes .reds:nth-child(1){
+    background-image: url(./IMAGENES/redes/facebook.png);
+}
+.redes .reds:nth-child(2){
+    background-image: url(./IMAGENES/redes/whatsapp.png);
+}
+.redes .reds:nth-child(3){
+    background-image: url(./IMAGENES/redes/instagram.png);
+}
+
+
+
+
+@media screen and (max-width: 768px){/*¡PAD MINI*/
+    #ecofamil{
+        margin-top: 50px;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+    }
+}
+@media screen and (max-width: 450px){ /*¡PHONE SE */
+    header{
+        width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .cabeza{
+        width: 100%;
+        height: 140px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabeza .cabe:nth-child(1){
+        margin-top: 15px;
+        height: 70px;
+        width: 100%;
+        background-image: url(./IMAGENES/logo.png);
+        background-position: center ;
+    }
+    .cabeza .cabe:nth-child(2){
+        display: none;
+    }
+    .cabeza .cabe:nth-child(3){
+        display: none;
+    }
+    .nav{
+        margin: 0;
+        height: 40px;
+        width: 100%;
+        background-color: var(--mored);
+    }
+    .nav nav{
+        margin: 0;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav a{
+        height: 40px;;
+        padding: 5px;
+        font-size: 12px;
+    }
+    header nav a:hover{
+        background-color: var(--rosed);
+    }
+    
+    .contacto1{
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ini{
+        display: none;
+    }
+
+    /*CONTACTO*/
+
+    #formulario{
+        width: 100%;
+        height: 300vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .datos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .relleno{
+        width: 100%;
+        height: 100%;
+    }
+    .dat{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconos1{
+        width: 10%;
+        height: 20%;
+        text-align: center;
+    }
+    .datos1{
+        width: 85%;
+        height: 50%;
+        text-align: center;
+    }
+    .datos #col{
+        color: var(--mored);
+        text-align: center;
+    }
+    .datos .dat:nth-child(2){
+        height: 150px;
+    }
+    .datos .dat:nth-child(3){
+        height:150px;
+    }
+    .datos .dat:nth-child(4){
+        height:200px;
+    }
+    .datos .dat:nth-child(5){
+        height: 150px;
+    }
+    .relleno h1{
+        color: var(--mored);
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    /*footer*/
+    footer{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer h1{
+        color: white;
+        font-size: 20px;
+    }
+    .navega{
+        margin-top: 0px;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navega nav{
+        margin: 0;
+    }
+    .navega h1{
+        padding: 0;
+    }
+    .redes{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reds{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 414px){ /*¡PHONE XR */
+
+    /*CONTACTO*/
+
+    #formulario{
+        width: 100%;
+        height: 180vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*SECTION ECOFAMIL*/
+    #ecofamil{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 390px){ /*¡PHONE 12 PRO*/
+    
+    /*footer*/
+    footer{
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (max-width: 375px){ /*¡PHONE SE */
+    /*CONTACTO*/
+    #formulario{
+         width: 100%;
+         height: 270vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+     /*SECTION ECOFAMIL*/
+    #ecofamil{
+         width: 100%;
+         height: 110vh;
+         display: flex;
+         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px){ /*¡SAMSUNG GALAXY S8 */
+   /*CONTACTO*/
+
+    #formulario{
+        width: 100%;
+        height: 250vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*SECTION ECOFAMIL*/
+    #ecofamil{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}

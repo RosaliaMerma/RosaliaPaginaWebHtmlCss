@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --rosed:#ff0080;
+    --mored:#8635d8;
+}
+/*HERADER*/
+header{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(64, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ) 
+    ,url(./IMAGENES/pexels-meruyert-gonullu-6161664.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.cabeza{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.cabe{
+    height: 75%;
+    margin-bottom: 7px;
+}
+.cabeza .cabe:nth-child(1){
+    height: 85%;
+    margin: 3px;
+    width: 350px;
+    background-image: url(./IMAGENES/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+
+
+.nav{
+    width: 85%;
+    height: 60px;
+    background-color: var(--mored);
+    margin: 10px 0;
+    display: flex;
+    padding: 0 18px;
+    justify-content: space-between;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:'Roboto', sans-serif;
+}
+header nav a:hover{
+    background-color: var(--rosed);
+}
+.barra{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img{
+    width: 22px;
+}
+.frase{
+    margin-top: 80px;
+}
+.frase h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 100px;
+}
+
+
+
+/*SECCTION #1*/
+#tradicion{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido{
+    width: 80%;
+    height: 32%;
+}
+#tradicion .contenido:nth-child(1){
+    height: 39%;
+    text-align: center;
+}
+#tradicion .contenido:nth-child(1) h1{
+    font-size: 35px;
+    margin: 0px 5px 15px 5px;
+    font-weight: bolder;
+    color: var(--mored);
+}
+#tradicion .contenido:nth-child(1) h3{
+    font-size: 17px;
+    font-weight: normal;
+    margin: 50px 5px 5px 5px;
+}
+#tradicion .contenido:nth-child(1) p{
+    font-weight: lighter;
+}
+#tradicion .contenido:nth-child(2){
+    height: 39%;
+    display: flex;
+    justify-content: space-between;
+}
+#tradicion .contenido:nth-child(3){
+    height: 19%;
+    display: flex;
+    justify-content: center;
+}
+.cuadros{
+    width: 23%;
+    height: 100%;
+}
+.imgen{
+    width: 100%;
+    height: 60%;
+    background-image: url(./IMAGENES/servicios/biscotti-xmas-1055.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.titu{
+    width: 100%;
+    height: 40%;
+}
+.titu h1{
+    padding-top: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+.cuadros:nth-child(2) .imgen{
+    background-image: url(./IMAGENES/servicios/e03fb143-a491-402b-bb70-db1a082303ab.jpg);
+}
+.cuadros:nth-child(3) .imgen{
+    background-image: url(./IMAGENES/servicios/Pack-Navidad-x6-2.jpeg);
+}
+.cuadros:nth-child(4) .imgen{
+    background-image: url(./IMAGENES/servicios/WhatsApp-Image-2021-01-30-at-2.25.14-PM.jpeg);
+}
+
+
+
+
+/*SECTION-PRODUCTOS*/
+#productos{
+    width: 100%;
+    height:auto;
+    flex-direction: column;
+    display: flex;
+}
+#productos h1{
+    text-align: center;
+    font-size: 33px;
+    color: var(--mored);
+    padding: 20px 0;
+}
+.container-productos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    padding: 0 20px;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.box{
+    width: 30%;
+    margin: 15px;
+    display: flex;
+    border: 2px solid rgba(43, 43, 43, 0.158);
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    box-shadow: 0 0 15px rgba(94, 94, 94, 0.418);
+}
+.img-producto{
+    width: 100%;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.oferta{
+    margin: 10px 0 0 10px;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    background-color: var(--mored);
+}
+.oferta #oferta{
+    color: white;
+    margin: auto;
+    padding: 0;
+    font-size: 15px;
+}
+.nom-producto{
+    width: 100%;
+    height: 20%;
+}
+.nom-producto #nombre{
+    color: black;
+    padding: 0;
+    font-size: 23px;
+}
+.nom-producto #precio{
+    text-align: center;
+    color: black;
+}
+.container-productos .box:nth-child(1) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/1.jpg);
+}
+.container-productos .box:nth-child(2) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/10.jpeg);
+}
+.container-productos .box:nth-child(3) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/11.webp);
+}
+.container-productos .box:nth-child(4) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/12.webp);
+}
+.container-productos .box:nth-child(5) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/13.webp);
+}
+.container-productos .box:nth-child(6) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/14.jpg);
+}
+.container-productos .box:nth-child(7) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/15.webp);
+}
+.container-productos .box:nth-child(8) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/2.jpg);
+}
+.container-productos .box:nth-child(9) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/3.jpeg);
+}
+.container-productos .box:nth-child(10) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/4.jpg);
+}
+.container-productos .box:nth-child(11) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/5.jpeg);
+}
+.container-productos .box:nth-child(12) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/6.jpeg);
+}
+.container-productos .box:nth-child(13) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/7.jpg);
+}
+.container-productos .box:nth-child(14) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/8.jpg);
+}
+.container-productos .box:nth-child(15) .img-producto{
+    background-image: url(./IMAGENES/PRODUCTOS/9.jpg);
+}
+
+
+@media screen and (max-width:1200px){
+    .box{
+        width: 40%;
+    }
+}
+@media screen and (max-width:754px){
+    .nom-producto #nombre{
+        font-size: 20px;
+    }
+    .nom-producto #precio{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px){
+    .box{
+        width: 90%;
+    }
+}
+
+
+/*SECTION #3*/
+#ecofamil{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ecofamil .container:nth-child(1){
+    margin-top: 130px;
+    height: 80vh;
+    background-color: var(--mored);
+}
+#ecofamil .container:nth-child(2){
+    height: 50vh;
+    flex-direction: row;
+    justify-content: center;
+}
+.imagen1{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.photos{
+    width: 25%;
+    height: 100%;
+    background-image: url(./IMAGENES/pasteleria/curso-pasteleria-reposteria-profesional.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imagen1 .photos:nth-child(2){
+    background-image: url(./IMAGENES/pasteleria/Nosotros-copia-1-1536x1025.jpg);
+}
+.imagen1 .photos:nth-child(3){
+    background-image: url(./IMAGENES/pasteleria/nova-escuela-programa-virtual-panaderia-aula-virtual.jpg);
+}
+.imagen1 .photos:nth-child(4){
+    background-image: url(./IMAGENES/pasteleria/nova-escuela-programa-virtual-pasteleria-aula-virtual.jpg);
+}
+.eco-sac{
+    width: 87%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.empresa{
+    text-align: center;
+    width: 100%;
+}
+.empresa h1{
+    font-size: 45px;
+    color: white;
+}
+.empresa h3{
+    font-size: 18px;
+    color: white;
+}
+.container1{
+    width: 29%;
+    height: 100%;
+}
+.container1 h1{
+    font-size: 20px;
+    margin: 35px 0;
+}
+.container1 p{
+    font-size: 15px;
+    padding-right: 40px;
+    text-align: justify;
+}
+.container1 img{
+    margin: 35px 0;
+    width: 370px;
+}
+.contac{
+    width: 100%;
+    height: 43%;
+    margin-top: 10px;
+}
+.icon-contact{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+.icon-contact img{
+    width: 15px;
+    margin: 0;
+}
+.icon-contact h1{
+    margin: 0 10px;
+    font-size: 12px;
+    font-weight: normal ;
+}
+/*footer*/
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(34,41,49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h1{
+    color: white;
+    font-size: 20px;
+}
+.navega{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navega nav{
+    margin: 0;
+}
+.navega nav a:hover{
+    color: var(--rosed);
+}
+.navega h1{
+    padding: 30px 0 0 15px;
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(111, 116, 122);
+}
+.redes{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.reds{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.redes .reds:nth-child(1){
+    background-image: url(./IMAGENES/redes/facebook.png);
+}
+.redes .reds:nth-child(2){
+    background-image: url(./IMAGENES/redes/whatsapp.png);
+}
+.redes .reds:nth-child(3){
+    background-image: url(./IMAGENES/redes/instagram.png);
+}
+
+
+
+
+
+
+
+/*RESPONSIVE ¡PHONE SE*/
+
+@media screen and (max-width: 450px) {
+    header{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        ) 
+        ,url(./IMAGENES/pexels-meruyert-gonullu-6161664.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .cabeza{
+        width: 100%;
+        height: 180px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .barra{
+        display: none;
+    }
+    .cabeza .cabe:nth-child(1){
+        margin-top: 15px;
+        height: 90px;
+        width: 330px;
+        background-image: url(./IMAGENES/logo.png);
+        background-position: center ;
+    }
+    .nav{
+        margin: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+    .nav nav{
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav a{
+        height: 30px;;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .img{
+        width: 20px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabe img{
+        width: 20px;
+    }
+    .texto{
+        width: 200px;
+        height: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .texto h1{
+        font-size: 15px;
+        margin: 0 5px;
+        color: white;
+    }
+
+    .frase{
+        margin-top: 50px;
+    }
+    .frase h1{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 90px 15px;
+    }
+    
+
+    /*SECTION TRADICION */
+    #tradicion{
+        width: 100%;
+        height: 220vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contenido{
+        width: 95%;
+        height: 32%;
+    }
+    #tradicion .contenido:nth-child(1){
+        height: 25%;
+        text-align: center;
+    }
+    #tradicion .contenido:nth-child(1) h1{
+        font-size: 35px;
+        margin: 0px 5px 15px 5px;
+        font-weight: bolder;
+        color: var(--mored);
+    }
+    #tradicion .contenido:nth-child(1) h3{
+        font-size: 17px;
+        font-weight: normal;
+        margin: 50px 5px 5px 5px;
+    }
+    #tradicion .contenido:nth-child(1) p{
+        font-weight: lighter;
+        padding: 10px;
+    }
+    #tradicion .contenido:nth-child(2){
+        height: 1050px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #tradicion .contenido:nth-child(3){
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .cuadros{
+        width: 80%;
+        height: 250px;
+    }
+
+
+    /*SECTION ECOFAMIL*/
+    #ecofamil{
+        width: 100%;
+        height: 330vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #ecofamil .container:nth-child(1){
+        margin-top: 130px;
+        height: 1400px;
+        background-color: var(--mored);
+    }
+    #ecofamil .container:nth-child(2){
+        height: 700px;
+        flex-direction: column;
+    }
+    .imagen1{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photos{
+        width: 100%;
+        height: 100%;
+    }
+    .eco-sac{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .empresa h1{
+        text-align: center;
+        margin: 50px 0 30px 0;
+        font-size: 35px;
+        color: white;
+    }
+    .empresa h3{
+        text-align: center;
+        padding: 7px;
+        font-size: 14px;
+        color: white;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 800px;
+    }
+    .container1 h1{
+        font-size: 20px;
+        margin: 0;
+    }
+    .container1 p{
+        font-size: 15px;
+        padding:15px;
+        text-align: justify;
+    }
+    .container1 img{
+        margin: 80px 0 30px 0;
+        width: 300px;
+    }
+    .contac{
+        width: 100%;
+        height: 43%;
+        margin-top: 10px;
+    }
+    .icon-contact{
+        width: 100%;
+        margin: 5px 15px;
+        height: 25%;
+        display: flex;
+        align-items: center;
+    }
+    .icon-contact img{
+        width: 15px;
+        margin: 0;
+    }
+    .icon-contact h1{
+        margin: 0 10px;
+        font-size: 12px;
+        font-weight: normal ;
+    }
+        
+    /*footer*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer h1{
+        color: white;
+        font-size: 20px;
+    }
+    .navega{
+        margin-top: 25px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navega nav{
+        margin: 0;
+    }
+    .navega h1{
+        padding: 0;
+    }
+    .redes{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reds{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+
+    /*SECTION TRADICION */
+    #tradicion{
+        width: 100%;
+        height: 240vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /*section GENTE*/
+    #gente{
+        width: 100%;
+        height: 220vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /*SECTION ECOFAMIL*/
+    #ecofamil{
+        width: 100%;
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 375px) {
+
+    /*SECTION TRADICION */
+    #tradicion{
+        width: 100%;
+        height: 275vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /*section GENTE*/
+    #gente{
+        width: 100%;
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /*SECTION ECOFAMIL*/
+    #ecofamil{
+        width: 100%;
+        height: 260vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    /*SECTION TRADICION */
+    #tradicion{
+        width: 100%;
+        height: 260vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /*section GENTE*/
+    #gente{
+        width: 100%;
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /*SECTION ECOFAMIL*/
+    #ecofamil{
+        width: 100%;
+        height: 260vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
